@@ -1,0 +1,47 @@
+body{
+    background-color: #ffebdf;
+    /*background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);*/
+    background-image: url("https://designstripe-secure.imgix.net/scene-snapshots/ca3ab571-97af-4e86-bbf9-d6a7c02040bb/1666992949461/gif?auto=compress&gif-q=60&fit=clip&h=400&s=c58c2d881078c5ee2b4a88e85a3bbe45?bust=1675265542783");
+    background-repeat: no-repeat; 
+    background-size:50%;
+}
+
+.content-table{
+    display: none;
+    border-collapse:collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-left:150px;
+    }
+.content-table thead tr{
+    
+    color:#000;
+    text-align: left;
+    font-weight: bold;
+}
+.content-table th,
+.content-table td {
+    padding: 21px 51px;
+    
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #4158D0;
+background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+}
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+
+}
+.content-table tbody tr.active-row {
+    font-weight: bold;
+    color: #000;
+}

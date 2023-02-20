@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previous data</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='previous.css')}}">
+</head>
+<body>
+    <form class="form-inline" name="ids" method="POST">
+        
+        <div class="table text-center mt-4 ml-4">
+            <table class="content-table" border="1px" cellpadding="20px" cellspacing="0px">
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Temperature</th>
+                        <th>Pressure</th>
+                        <th>Humidity</th>
+                    
+                </tr>
+                </thead>
+                <tbody></tbody>
+                
+                {% for i in place %}
+                <tr class="active-row">
+                        <td>{{i[0]}}</td>
+                        <td>{{i[1]}}</td>
+                        <td>{{i[2]}}</td>
+                        <td>{{i[3]}}</td>
+                {% endfor %}
+                </tr>
+            </table>
+        </div>
+        
+    </form>
+    <script>
+        setTimeout(()=>{
+            document.querySelector('.content-table').style.display = "block";
+            document.querySelector("body").style.backgroundPosition = "top right";
+        },3000)
+    </script>
+</body>
+</html>
